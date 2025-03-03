@@ -9,7 +9,8 @@ st.set_page_config(page_title="Ollama & MindsDB Chat", page_icon="💬", layout=
 FASTAPI_URL = "http://127.0.0.1:8000/chat/"
 
 # Sidebar settings
-model = st.sidebar.selectbox("Select Model", ["deepseek-coder:1.3b"])
+model= st.sidebar.selectbox("Select Model", ["deepseek-coder:1.3b"])
+component = st.sidebar.selectbox("select component", ["Defect Management","automated test case","All"])
 use_mindsdb = st.sidebar.checkbox("Use MindsDB instead of Ollama")
 st.sidebar.write("---")
 
